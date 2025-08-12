@@ -170,18 +170,7 @@
   left: 35vw;
   width: 29vw;
 }
-#slide10 {
-  background: url('hands-overlay.png') center/cover;
-}
 
-.call-to-action {
-  background: rgba(0,0,0,0.7);
-  color: white;
-  padding: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
 body {
   background-color: #c0f3ff;
   margin: 0;
@@ -413,6 +402,29 @@ body {
   opacity: 1 !important;
   background: red !important;
   display: block !important;
+}
+#slide5 .story-text {
+  width: 70%; 
+  bottom: 12% !important; 
+  left: 50% !important;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8); 
+  padding: 10px;
+  font-size: 0.9em; 
+}
+
+/* Move nav bar further down */
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  bottom: 5px; /* lower than before */
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(192, 243, 255, 0.8);
+  padding: 10px;
 }
 
 
