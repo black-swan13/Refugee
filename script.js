@@ -99,7 +99,17 @@ function animateCurrentSlide() {
       yoyo: true
     });
   }
-  // ... rest of your existing animations
+  gsap.set(".story-text", { opacity: 0, y: 20 });
+  
+  // Show current slide's text
+  const currentText = document.querySelector(`#slide${currentSlide + 1} .story-text`);
+  if (currentText) {
+    gsap.to(currentText, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: 0.5
+    });
 }
   // Event Listeners
   prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
@@ -129,4 +139,5 @@ function animateCurrentSlide() {
   updateSlide();
   animateCurrentSlide();
 });
+
 
