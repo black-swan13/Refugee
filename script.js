@@ -70,7 +70,37 @@ document.addEventListener('DOMContentLoaded', () => {
       gsap.to(overlay, { opacity: 1, duration: 2, delay: 0.5 });
     }
   }
-
+function animateCurrentSlide() {
+  // Reset all text animations first
+  gsap.killTweensOf(".story-text");
+  
+  // Slide-specific animations
+  if (currentSlide === 0) { // Slide 1
+    gsap.to("#slide1 .story-text", { 
+      opacity: 1, 
+      y: 0, 
+      duration: 1.5,
+      delay: 0.8
+    });
+  }
+  else if (currentSlide === 2) { // Slide 3
+    gsap.to("#slide3 .story-text", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: 0.3
+    });
+    
+    // Fire effect intensity pulse
+    gsap.to(".fire-overlay", {
+      opacity: 0.8,
+      duration: 0.5,
+      repeat: 3,
+      yoyo: true
+    });
+  }
+  // ... rest of your existing animations
+}
   // Event Listeners
   prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
   nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
@@ -99,3 +129,4 @@ document.addEventListener('DOMContentLoaded', () => {
   updateSlide();
   animateCurrentSlide();
 });
+
