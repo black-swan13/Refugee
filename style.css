@@ -242,6 +242,15 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+#slide5 .story-text {
+  width: 70%; /* Reduce width for boat scenes */
+  bottom: 5% !important; /* Lower position */
+  left: 50% !important;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8); /* Darker for visibility */
+  padding: 10px;
+  font-size: 0.9em; /* Slightly smaller text */
+}
 
 
 .sad-overlay {
@@ -394,4 +403,5 @@ body {
   background: red !important;
   display: block !important;
 }
+
 
