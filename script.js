@@ -79,7 +79,81 @@ document.addEventListener('DOMContentLoaded', () => {
     music.muted = !music.muted;
     document.getElementById('mute-btn').textContent = music.muted ? '🔇 Unmute' : '🔊 Mute';
   });
+let currentSlide = 1;
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+const counter = document.getElementById("counter");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+const dotsContainer = document.getElementById("dots");
+const bgMusic = document.getElementById("bg-music");
+const muteBtn = document.getElementById("mute-btn");
+
+// Create dots
+for (let i = 1; i <= totalSlides; i++) {
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
+  dot.addEventListener("click", () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+}
+updateUI();
+
+// Show slide with GSAP animations
+function showSlide(slideNum) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i + 1 === slideNum ? "block" : "none";
+  });
+
+  const activeSlide = slides[slideNum - 1];
+  const characters = activeSlide.querySelectorAll(".character");
+
+  if (slideNum === 7) {
+    // Special sad animation
+    gsap.fromTo(characters, { opacity: 0, y: 40 }, { opacity: 1, y: 0, stagger: 0.6, duration: 1.8, ease: "power1.out" });
+    if (characters[1]) {
+      gsap.to(characters[1], { y: 20, duration: 4, ease: "power1.inOut", repeat: -1, yoyo: true });
+    }
+    const overlay = activeSlide.querySelector(".sad-overlay");
+    if (overlay) {
+      gsap.to(overlay, { opacity: 1, duration: 2, delay: 0.5 });
+    }
+  } else {
+    // Normal animation
+    gsap.fromTo(characters, { opacity: 0, y: 50 }, { opacity: 1, y: 0, stagger: 0.2, duration: 1, ease: "power2.out" });
+  }
+}
+
+function updateUI() {
+  counter.textContent = `${currentSlide}/${totalSlides}`;
+  document.querySelectorAll(".dot").forEach((dot, i) => {
+    dot.classList.toggle("active", i + 1 === currentSlide);
+  });
+  showSlide(currentSlide);
+}
+
+function goToSlide(num) {
+  if (num < 1) num = totalSlides;
+  if (num > totalSlides) num = 1;
+  currentSlide = num;
+  updateUI();
+}
+
+prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
+nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") goToSlide(currentSlide + 1);
+  if (e.key === "ArrowLeft") goToSlide(currentSlide - 1);
+});
+
+muteBtn.addEventListener("click", () => {
+  bgMusic.muted = !bgMusic.muted;
+  muteBtn.textContent = bgMusic.muted ? "🔇 Unmute" : "🔊 Mute";
+});
+
+bgMusic.volume = 0.5;
+bgMusic.play().catch(() => {});
 
   // Initialize first slide
   showSlide(currentSlide);
 });
+
