@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tina's Mental Health</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="world">
+    <div class="grid-overlay"></div>
+
+    <!-- Slide 1 -->
+    <div class="slide" id="slide1">
+      <img id="Slide-1-06" src="Images/Slide1/Happy_Life-06.png" alt="Slide 1-06" class="character" />
+      <img id="Slide-1-05" src="Images/Slide1/Happy_Life-05.png" alt="Slide 1-05" class="character" />
+      <img id="Slide-1-01" src="Images/Slide1/Happy_Life-01.png" alt="Slide 1-01" class="character" />
+      <img id="Slide-1-02" src="Images/Slide1/Happy_Life-02.png" alt="Slide 1-02" class="character" />
+      <img id="Slide-1-03" src="Images/Slide1/Happy_Life-03.png" alt="Slide 1-03" class="character" />
+      <img id="Slide-1-04" src="Images/Slide1/Happy_Life-04.png" alt="Slide 1-04" class="character" />
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide2" style="display:none;">
+      <img id="Slide-2-02" src="Images/Slide 2/DOOM-02.png" alt="Slide 2-02" class="character" />
+      <img id="Slide-2-01" src="Images/Slide 2/DOOM-01.png" alt="Slide 2-01" class="character" />
+      
+      <img id="Slide-2-03" src="Images/Slide 2/DOOM-03.png" alt="Slide 2-03" class="character" />
+      <img id="Slide-2-04" src="Images/Slide 2/DOOM-04.png" alt="Slide 2-04" class="character" />
+      <img id="Slide-2-05" src="Images/Slide 2/DOOM-05.png" alt="Slide 2-05" class="character" />
+      <img id="Slide-2-06" src="Images/Slide 2/DOOM-06.png" alt="Slide 2-06" class="character" />
+      
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide3" style="display:none;">
+      <img id="Slide-3-01" src="Images/Crisis/Crisis-01.png" alt="Slide 3-01" class="character" />
+    
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" id="slide4" style="display:none;">
+    <img id="Slide-4-01" src="Images/Terrain/Rough_Terrain-01.png" alt="Slide 4-01" class="character" />
+    <img id="Slide-4-02" src="Images/Terrain/Rough_Terrain-02.png" alt="Slide 4-01" class="character" />
+    <img id="Slide-4-03" src="Images/Terrain/Rough_Terrain-03.png" alt="Slide 4-01" class="character" />
+  
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" id="slide5" style="display:none;">
+      <img id="Slide-5-01" src="Images/Braving/Braving_sea-01.png" alt="Slide 5-01" class="character" />
+      <img id="Slide-5-02" src="Images/Braving/Braving_sea-02.png" alt="Slide 5-02" class="character" />
+      <img id="Slide-5-04" src="Images/Braving/Braving_sea-04.png" alt="Slide 5-04" class="character" />
+      <img id="Slide-5-03" src="Images/Braving/Braving_sea-03.png" alt="Slide 5-03" class="character" />
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide" id="slide6" style="display:none;">
+      <img id="Slide-6-01" src="Images/Struggles2/Struggles_Sea-01.png" alt="Slide 6-01" class="character" />
+      <img id="Slide-6-02" src="Images/Struggles2/Struggles_Sea-02.png" alt="Slide 6-02" class="character" />
+      <img id="Slide-6-04" src="Images/Struggles2/Struggles_Sea-04.png" alt="Slide 6-04" class="character" />
+      <img id="Slide-6-03" src="Images/Struggles2/Struggles_Sea-03.png" alt="Slide 6-03" class="character" />
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide" id="slide7" style="display:none;">
+      <img id="Slide-7-01" src="Images/Hope/Beacon_Of_Hope-01.png" alt="Slide 7-01" class="character" />
+      <img id="Slide-7-02" src="Images/Hope/Beacon_Of_Hope-02.png" alt="Slide 7-02" class="character" />
+     
+    
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide" id="slide8" style="display:none;">
+      <img id="Slide-8-01" src="Images/Hoping/Hoping-01.png" alt="Slide 8-01" class="character" />
+      <img id="Slide-8-02" src="Images/Hoping/Hoping-02.png" alt="Slide 8-02" class="character" />
+    
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide" id="slide9" style="display:none;">
+      <img id="Slide-9-01" src="Images/Stability/Stability-01.png" alt="Slide 9-01" class="character" />
+      </div>
+
+  
+    
+    <!-- Navigation -->
+    <div id="navigation">
+      <button id="prev">◀</button>
+      <span id="counter">1/9</span>
+      <div id="dots"></div>
+      <button id="next">▶</button>
+    </div>
+  </div>
+
+  <!-- Mute Button -->
+  <button id="mute-btn">🔊 Mute</button>
+
+  <audio id="bg-music" src="music.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
