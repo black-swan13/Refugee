@@ -147,7 +147,7 @@
   width: 50vw; 
  }
 #slide7 #Slide-7-02 { 
-  top: 58vh; 
+  top: 66vh; 
   left: 20vw; 
   width: 50vw; 
 }
@@ -157,12 +157,12 @@
 #slide8 #Slide-8-01 { 
   top: 3vh; 
   left: 20vw;
-   width: 80vw;
+   width: 70vw;
    }
 #slide8 #Slide-8-02 { 
   top: 35vh; 
   left: 20vw; 
-  width: 80vw;
+  width: 65vw;
  }
 
 #slide9 #Slide-9-01{
@@ -414,6 +414,7 @@ body {
   background: red !important;
   display: block !important;
 }
+
 
 
 
