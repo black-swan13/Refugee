@@ -98,17 +98,24 @@ for (let i = 1; i <= totalSlides; i++) {
 }
 updateUI();
 
-// Show slide with GSAP animations
+
 function showSlide(slideNum) {
   slides.forEach((slide, i) => {
-    slide.style.display = i + 1 === slideNum ? "block" : "none";
+    if (i + 1 === slideNum) {
+      slide.style.opacity = "1";
+      slide.style.pointerEvents = "auto";
+      slide.style.zIndex = "1";
+    } else {
+      slide.style.opacity = "0";
+      slide.style.pointerEvents = "none";
+      slide.style.zIndex = "0";
+    }
   });
 
   const activeSlide = slides[slideNum - 1];
   const characters = activeSlide.querySelectorAll(".character");
 
   if (slideNum === 7) {
-    // Special sad animation
     gsap.fromTo(characters, { opacity: 0, y: 40 }, { opacity: 1, y: 0, stagger: 0.6, duration: 1.8, ease: "power1.out" });
     if (characters[1]) {
       gsap.to(characters[1], { y: 20, duration: 4, ease: "power1.inOut", repeat: -1, yoyo: true });
@@ -118,10 +125,10 @@ function showSlide(slideNum) {
       gsap.to(overlay, { opacity: 1, duration: 2, delay: 0.5 });
     }
   } else {
-    // Normal animation
     gsap.fromTo(characters, { opacity: 0, y: 50 }, { opacity: 1, y: 0, stagger: 0.2, duration: 1, ease: "power2.out" });
   }
 }
+
 
 function updateUI() {
   counter.textContent = `${currentSlide}/${totalSlides}`;
@@ -156,4 +163,5 @@ bgMusic.play().catch(() => {});
   // Initialize first slide
   showSlide(currentSlide);
 });
+
 
