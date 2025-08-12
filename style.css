@@ -182,7 +182,36 @@
   margin: 0 auto;
   text-align: center;
 }
+/* Add to your CSS */
+#slide10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0,0,0,0.85); /* Dark overlay for readability */
+}
 
+.cta-container {
+  max-width: 80%;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cta-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.cta-actions a {
+  color: #c0f3ff; /* Matches your theme */
+  text-decoration: underline;
+}
 body {
   background-color: #c0f3ff;
   margin: 0;
@@ -438,6 +467,7 @@ body {
   background-color: rgba(192, 243, 255, 0.8);
   padding: 10px;
 }
+
 
 
 
