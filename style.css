@@ -1,4 +1,176 @@
-/* ==================== BASE STYLES ==================== */
+#slide1 #Slide-1-06 { 
+  top: 70vh; 
+  left: 10vw; 
+  width: 150vw;  
+}
+
+#slide1 #Slide-1-01 { 
+  top: 35vh; 
+  left: 10vw; 
+  width: 20vw; 
+}
+
+#slide1 #Slide-1-02 { 
+  top: 25vh; 
+  left: 45vw; 
+  width: 50vw;  
+}
+
+#slide1 #Slide-1-03 {   
+  top: 55vh; 
+  left: 35vw; 
+  width: 20vw;  
+}
+
+#slide1 #Slide-1-04 { 
+  top: 15vh; 
+  left: 18vw; 
+  width: 50vw; 
+}
+
+#slide1 #Slide-1-05 { 
+  top: 10vh; 
+  left: 10vw; 
+  width: 150vw;  
+}
+
+
+
+
+#slide2 #Slide-2-01 { 
+  top: 8vh; 
+  left: 10vw; 
+  width: 10vw;  
+}
+
+#slide2 #Slide-2-02 { 
+  top: 5vh; 
+  left: 11vw; 
+  width: 90vw; 
+}
+
+#slide2 #Slide-2-03 { 
+  top: 18vh; 
+  left: 48vw; 
+  width: 13vw; 
+}
+
+#slide2 #Slide-2-04 { 
+  top: 48vh; 
+  left: 30vw; 
+  width: 15vw; 
+}
+
+#slide2 #Slide-2-05 { 
+  top: 32vh; 
+  left: 70vw; 
+  width: 13vw; 
+}
+
+#slide2 #Slide-2-06 { 
+  top: 80vh; 
+  left: 58vw; 
+  width: 15vw; 
+}
+
+
+#slide3 #Slide-3-01 { 
+  top: 5vh; 
+  left: 28vw; 
+  width: 30vw; 
+}
+
+#slide4 #Slide-4-01 { 
+  top: 5vh; 
+  left: 25vw; 
+  width: 65vw; 
+}
+
+#slide4 #Slide-4-02 { 
+  top: 26vh; 
+  left: 63vw; 
+  width: 21.5vw; 
+}
+
+#slide4 #Slide-4-03 { 
+  top: 40vh; 
+  left: 25vw; 
+  width: 28.5vw; 
+}
+
+#slide5 #Slide-5-01 {
+   top: 5vh; 
+   left: 20vw; 
+   width: 95vw; 
+ }
+#slide5 #Slide-5-02 { 
+  top: 27vh; 
+  left: 37vw; 
+  width: 36vw; 
+}
+#slide5 #Slide-5-03 { 
+  top: 5vh; 
+  left: 20vw; 
+  width: 150vw; 
+}
+#slide5 #Slide-5-04 { 
+  top: 5vh; 
+  left: 20vw; 
+  width: 150vw; 
+}
+
+#slide6 #Slide-6-01 {  
+  top: 5vh; 
+  left: 20vw; 
+  width: 95vw;
+ }
+#slide6 #Slide-6-02 {
+  top: 34vh; 
+  left: 37vw; 
+  width: 25vw; 
+}
+#slide6 #Slide-6-03 { 
+  top: 5vh; 
+  left: 20vw; 
+  width: 15vw; 
+}
+#slide6 #Slide-6-04 {  
+  top: 5vh; 
+  left: 20vw; 
+  width: 150vw;  
+}
+
+
+#slide7 #Slide-7-01 { 
+  top: 0vh; 
+  left: 20vw; 
+  width: 50vw; 
+ }
+#slide7 #Slide-7-02 { 
+  top: 58vh; 
+  left: 20vw; 
+  width: 50vw; 
+}
+
+
+
+#slide8 #Slide-8-01 { 
+  top: 5vh; 
+  left: 20vw;
+   width: 100vw;
+   }
+#slide8 #Slide-8-02 { 
+  top: 35vh; 
+  left: 20vw; 
+  width: 100vw;
+ }
+
+#slide9 #Slide-9-01{
+  top: 30vh;
+  left: 35vw;
+  width: 29vw;
+}
+
 body {
   background-color: #c0f3ff;
   margin: 0;
@@ -14,8 +186,7 @@ body {
   overflow: hidden;
 }
 
-/* ==================== GRID OVERLAY ==================== */
-.grid-overlay {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -29,7 +200,7 @@ body {
   z-index: 1;
 }
 
-/* ==================== SLIDES & CHARACTERS ==================== */
+
 .slide {
   position: absolute;
   width: 100%;
@@ -49,11 +220,9 @@ body {
   will-change: transform, opacity;
 }
 
-/* Character positioning styles remain the same */
-#slide1 #Slide-1-01 { top: 35vh; left: 10vw; width: 20vw; }
-/* ... (keep all your existing character positioning rules) ... */
 
-/* ==================== TEXT STYLES ==================== */
+#slide1 #Slide-1-01 { top: 35vh; left: 10vw; width: 20vw; }
+
 .story-text {
   position: absolute;
   left: 50%;
@@ -74,8 +243,7 @@ body {
   pointer-events: none;
 }
 
-/* ==================== SPECIAL EFFECTS ==================== */
-/* Sad Overlay for Slide 7 */
+
 .sad-overlay {
   position: absolute;
   top: 0;
@@ -87,7 +255,7 @@ body {
   opacity: 0;
 }
 
-/* Fire Overlay for Slide 3 */
+
 .fire-overlay {
   position: absolute;
   top: 0;
@@ -108,7 +276,7 @@ body {
   100% { opacity: 0.8; }
 }
 
-/* Cinematic slow zoom */
+
 .slide .character {
   animation: slow-zoom 20s ease-in-out infinite alternate;
 }
@@ -118,7 +286,7 @@ body {
   to { transform: scale(1.05) translateY(-5px); }
 }
 
-/* ==================== NAVIGATION ==================== */
+
 #navigation {
   display: flex;
   align-items: center;
@@ -177,7 +345,7 @@ body {
   background: #555;
 }
 
-/* ==================== MUTE BUTTON ==================== */
+
 #mute-btn {
   position: fixed;
   bottom: 20px;
@@ -191,7 +359,7 @@ body {
   cursor: pointer;
 }
 
-/* ==================== MOBILE STYLES ==================== */
+
 @media (max-width: 768px) {
   .character {
     min-width: 150px !important;
@@ -226,3 +394,4 @@ body {
   background: red !important;
   display: block !important;
 }
+
