@@ -1,35 +1,35 @@
 #slide1 #Slide-1-06 { 
-  top: 65vh; 
+  top: 60vh; 
   left: 10vw; 
   width: 150vw;  
 }
 
 #slide1 #Slide-1-01 { 
-  top: 30vh; 
+  top: 25vh; 
   left: 10vw; 
   width: 20vw; 
 }
 
 #slide1 #Slide-1-02 { 
-  top: 20vh; 
+  top: 15vh; 
   left: 45vw; 
   width: 50vw;  
 }
 
 #slide1 #Slide-1-03 {   
-  top: 50vh; 
+  top: 45vh; 
   left: 35vw; 
   width: 20vw;  
 }
 
 #slide1 #Slide-1-04 { 
-  top: 10vh; 
+  top: 15vh; 
   left: 18vw; 
   width: 50vw; 
 }
 
 #slide1 #Slide-1-05 { 
-  top: 5vh; 
+  top: 0vh; 
   left: 10vw; 
   width: 150vw;  
 }
@@ -38,73 +38,73 @@
 
 
 #slide2 #Slide-2-01 { 
-  top: 8vh; 
+  top: 3vh; 
   left: 10vw; 
   width: 10vw;  
 }
 
 #slide2 #Slide-2-02 { 
-  top: 5vh; 
+  top: 0vh; 
   left: 11vw; 
   width: 90vw; 
 }
 
 #slide2 #Slide-2-03 { 
-  top: 18vh; 
+  top: 13vh; 
   left: 48vw; 
   width: 13vw; 
 }
 
 #slide2 #Slide-2-04 { 
-  top: 48vh; 
+  top: 43vh; 
   left: 30vw; 
   width: 15vw; 
 }
 
 #slide2 #Slide-2-05 { 
-  top: 32vh; 
+  top: 28vh; 
   left: 70vw; 
   width: 13vw; 
 }
 
 #slide2 #Slide-2-06 { 
-  top: 80vh; 
+  top: 75vh; 
   left: 58vw; 
   width: 15vw; 
 }
 
 
 #slide3 #Slide-3-01 { 
-  top: 5vh; 
+  top: 3vh; 
   left: 28vw; 
   width: 30vw; 
 }
 
 #slide4 #Slide-4-01 { 
-  top: 3vh; 
+  top: 0vh; 
   left: 25vw; 
   width: 65vw; 
 }
 
 #slide4 #Slide-4-02 { 
-  top: 26vh; 
+  top: 22vh; 
   left: 63vw; 
   width: 21.5vw; 
 }
 
 #slide4 #Slide-4-03 { 
-  top: 40vh; 
+  top: 35vh; 
   left: 25vw; 
   width: 28.5vw; 
 }
 
 #slide5 #Slide-5-01 {
-   top: 3vh; 
+   top: 0vh; 
    left: 20vw; 
    width: 95vw; 
  }
 #slide5 #Slide-5-02 { 
-  top: 27vh; 
+  top: 23vh; 
   left: 37vw; 
   width: 36vw; 
 }
@@ -414,6 +414,7 @@ body {
   background: red !important;
   display: block !important;
 }
+
 
 
 
