@@ -109,20 +109,20 @@
   width: 36vw; 
 }
 #slide5 #Slide-5-03 { 
-  top: 5vh; 
+  top: 3vh; 
   left: 20vw; 
-  width: 150vw; 
+  width: 85vw; 
 }
 #slide5 #Slide-5-04 { 
-  top: 5vh; 
+  top: 3vh; 
   left: 20vw; 
-  width: 150vw; 
+  width: 85vw; 
 }
 
 #slide6 #Slide-6-01 {  
   top: 5vh; 
   left: 20vw; 
-  width: 95vw;
+  width: 90vw;
  }
 #slide6 #Slide-6-02 {
   top: 34vh; 
@@ -130,14 +130,14 @@
   width: 25vw; 
 }
 #slide6 #Slide-6-03 { 
-  top: 5vh; 
+  top: 3vh; 
   left: 20vw; 
   width: 15vw; 
 }
 #slide6 #Slide-6-04 {  
-  top: 5vh; 
+  top: 3vh; 
   left: 20vw; 
-  width: 150vw;  
+  width: 90vw;  
 }
 
 
@@ -155,18 +155,18 @@
 
 
 #slide8 #Slide-8-01 { 
-  top: 5vh; 
+  top: 3vh; 
   left: 20vw;
-   width: 100vw;
+   width: 80vw;
    }
 #slide8 #Slide-8-02 { 
   top: 35vh; 
   left: 20vw; 
-  width: 100vw;
+  width: 80vw;
  }
 
 #slide9 #Slide-9-01{
-  top: 30vh;
+  top: 20vh;
   left: 35vw;
   width: 29vw;
 }
@@ -403,5 +403,6 @@ body {
   background: red !important;
   display: block !important;
 }
+
 
 
