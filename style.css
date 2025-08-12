@@ -434,3 +434,11 @@ html {
     bottom: 15% !important; /* Overrides inline styles on mobile */
   }
 }
+/* Add this to your CSS */
+.story-text {
+  z-index: 100; /* Higher than characters (10vw) but below navigation (1000) */
+}
+
+.character {
+  z-index: 10; /* Ensure characters stay below text */
+}
