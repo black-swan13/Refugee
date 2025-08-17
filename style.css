@@ -170,26 +170,8 @@
   left: 35vw;
   width: 29vw;
 }
-#slide10 {
-  background: url('hands-overlay.png') center/cover;
-}
 
-.call-to-action {
-  background: rgba(0,0,0,0.7);
-  color: white;
-  padding: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-/* Add to your CSS */
-#slide10 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: rgba(0,0,0,0.85); /* Dark overlay for readability */
-}
+
 
 .cta-container {
   max-width: 80%;
@@ -467,6 +449,7 @@ body {
   background-color: rgba(192, 243, 255, 0.8);
   padding: 10px;
 }
+
 
 
 
